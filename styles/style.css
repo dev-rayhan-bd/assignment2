@@ -1,16 +1,12 @@
-/* common styles */
+/*--------------- common styles------------------------------------- */
 * {
   font-family: "Work Sans", sans-serif;
+  margin: 0;
 }
 .tittle {
   color: #131313;
   font-weight: 700;
   font-size: 45px;
-}
-h4 {
-  color: #131313;
-  font-weight: 600;
-  font-size: 20px;
 }
 
 .primary-btn,
@@ -27,7 +23,7 @@ h4 {
   height: 64px;
   text-align: center;
 }
-/* header section */
+/*----------------------------- header section---------------------------- */
 header {
   background: rgba(255, 144, 14, 0.1);
   width: 100%;
@@ -38,6 +34,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .tittle {
   margin-left: 240px;
@@ -53,7 +50,7 @@ header {
   font-size: 18px;
 }
 
-/* Banner style */
+/* ----------------------------Banner style ------------------------------------------*/
 .banner {
   display: flex;
   flex-direction: column;
@@ -87,7 +84,7 @@ header {
   left: 350px;
   margin-bottom: 50px;
 }
-/* img style */
+/* ------------------------------------banner img style--------------------------------------- */
 .banner-image {
   width: 100%;
   height: 500px;
@@ -96,7 +93,7 @@ header {
   left: 20px;
 }
 
-/* feature section */
+/*------------------------------------- feature section------------------------------------------ */
 .feature-image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -121,7 +118,7 @@ header {
   height: 304px;
   left: 50px;
 }
-/* feature-title style */
+/* -----------------------------------feature-title style------------------------------------------------ */
 .A {
   color: #727272;
   font-weight: 500;
@@ -137,18 +134,18 @@ header {
   font-weight: 700;
   font-size: 45px;
 }
-/* features paragraph */
+/* ---------------------------features paragraph---------------------------------------------------------- */
 .feature-details p {
   color: #727272;
   font-weight: 400;
   font-size: 16px;
 }
-/* btn */
+/*----------------------------------- btn----------------------------------------- */
 .primary-batton {
   position: relative;
   left: 0;
 }
-/* Features-you-will-love section */
+/*------------------------------------------------------------------------------------------------------------- Features-you-will-lovesection----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .Features-you-will-love {
   display: flex;
@@ -207,7 +204,7 @@ header {
   font-size: 25px;
   text-align: center;
 }
-/* some fat section */
+/* --------------------------------some fact section---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .somefact {
   padding: 100px;
 }
@@ -246,6 +243,7 @@ header {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transition-duration: 0.5s;
 }
+/* --------------------------animation section -------------------------------*/
 .achivement:hover,
 .hvr-bounce-in:focus,
 .hvr-bounce-in:active {
@@ -263,7 +261,7 @@ header {
 
   color: #727272;
 }
-/* sponser style */
+/*------------------------------------------------------------------------------------------------------------ sponser-style---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .sponser-info {
   width: 542px;
@@ -300,7 +298,7 @@ header {
   width: 153.33px;
   height: 50px;
 }
-/* blogs section styles */
+/* ------------------------------------------------blogs section styles --------------------------------------*/
 .blogs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -333,7 +331,7 @@ header {
   color: #562eff;
   font-size: 16px;
 }
-/* footer section */
+/* --------------------------------------------------------footer section ----------------------------------*/
 footer{
     margin-left: 100px;
     margin-right: 100px;
@@ -348,4 +346,132 @@ line-height: 23px;
 text-align: center;
 color: #424242;
 padding: 40px;
+}
+
+/* --------------------------------------------mobile device styles------------------------------ */
+
+@media only screen and (max-width:576px) {
+   .navigation{
+flex-direction: column;
+
+   } 
+  .tittle{
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .banner-title{
+    font-size: 50px;
+  }
+  .heading p{
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+.banner,.banner-details{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.banner-image{
+    position: none;
+    left: 0;
+    height: 350px;
+   
+}
+.primary-btn{
+    position: none;
+    left:80px;
+}
+.feature-image{
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 30px;
+
+}
+.feature-img{
+    width: 80%;
+}
+.feature-title{
+    margin-bottom: 30px;
+}
+.features{
+    flex-direction: column;
+}
+.feature-details{
+    position: relative;
+    left:0;
+    width: 80%;
+    height: auto; 
+}
+.feature-details p{
+    margin-bottom: 30px;
+}
+.Features-you-will-love{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.architect-img {
+    width: 80%;
+    height:auto;
+  }
+  
+  .info-container{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+  }
+  .details{
+    width: 100%;
+  }
+  .somefact {
+    padding: 20px;
+  }
+  .box{
+    flex-direction: column;
+  }
+ .sponser{
+    flex-direction: column;
+ }
+
+ .sponser-info {
+    width: 80%;
+    height: auto;
+  padding-left: 10px;
+  padding-right: 0;
+  margin-bottom: 30px;
+}
+.sponser-title{
+    position: relative;
+    left:0;
+}
+.sponser-para{
+    position: relative;
+    left:0; 
+}
+.blogs{
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 10px;
+    
+  }
+.top-blogs{
+    flex-direction: column;
+  }
+  .blog-info{
+    margin-left: 0;
+  }
+  .footer{
+ margin: 0;
+    background: #FFF4E7;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  .foter-para{
+    font-weight:200;
+font-size: 15px;
+text-align: center;
+color: #424242;
+padding: 10px;
+    
+}
 }
